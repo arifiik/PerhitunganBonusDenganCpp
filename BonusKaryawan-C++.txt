@@ -1,0 +1,54 @@
+#include <iostream>
+using namespace std;
+
+/*
+author : arif iik
+desc : 
+berikut ini adalah perhitungan bonus gaji untuk karyawan
+dan ini saya buat khusus teman teman saya mahasiswa unpam belajar
+supaya lebih mencintai algorithma dan logika pemrograman
+*/
+
+int main()
+
+{
+int tahun,sales,gapok;
+std::cout << "\n\n===================================================\n\n";
+std::cout << "Masa kerja anda ?? ";
+std::cin >> tahun ;
+std::cout << "Total Sales anda ?? ";
+std::cin >> sales ;
+std::cout << "Jumlah Gapok anda ?? ";
+std::cin >> gapok ;
+if (tahun,sales,gapok){
+	if (tahun>5){
+		if(sales>2000){
+			std::cout << "Jumlah bonus anda ?? \n\n";
+			std::cout<<" Bonus "<<gapok*0.50;
+		}else{
+			std::cout << "Jumlah bonus anda ?? \n\n";
+			std::cout<<" Bonus "<<gapok*0.25;
+		}
+		
+	}else if(tahun <5){
+		if(sales>2000){
+			std::cout << "Jumlah bonus anda ?? \n\n";
+			std::cout<<" Bonus "<<gapok*0.35;
+		}else{
+			std::cout << "Jumlah bonus anda ?? \n\n";
+			std::cout<<" Bonus "<<gapok*0.15;
+		}
+	}else if(tahun <1){
+		if(sales>2000){
+			std::cout << "Jumlah bonus anda ?? \n\n";
+			std::cout<<" Bonus "<<gapok*0.25;
+		}else{
+			std::cout << "Jumlah bonus anda ?? \n\n";
+			std::cout<<" Bonus "<<gapok*0;
+		}
+	}
+}
+
+    std::cout<<std::endl<<std::endl;
+    main();
+}
