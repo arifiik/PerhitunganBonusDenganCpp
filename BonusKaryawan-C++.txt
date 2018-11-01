@@ -12,15 +12,18 @@ supaya lebih mencintai algorithma dan logika pemrograman
 int main()
 
 {
-int tahun,sales,gapok;
+int tahun,bulan,sales,gapok;
 std::cout << "\n\n===================================================\n\n";
-std::cout << "Masa kerja anda ?? ";
+std::cout << "Masa kerja anda ?? \n";
+std::cout << "berapa tahun ?? ";
 std::cin >> tahun ;
+std::cout << "berapa bulan ?? ";
+std::cin >> bulan ;
 std::cout << "Total Sales anda ?? ";
 std::cin >> sales ;
 std::cout << "Jumlah Gapok anda ?? ";
 std::cin >> gapok ;
-if (tahun,sales,gapok){
+if (tahun,bulan,sales,gapok){
 	if (tahun>5){
 		if(sales>2000){
 			std::cout << "Jumlah bonus anda ?? \n\n";
@@ -30,7 +33,7 @@ if (tahun,sales,gapok){
 			std::cout<<" Bonus "<<gapok*0.25;
 		}
 		
-	}else if(tahun <5){
+	}else if(tahun > 0 ){
 		if(sales>2000){
 			std::cout << "Jumlah bonus anda ?? \n\n";
 			std::cout<<" Bonus "<<gapok*0.35;
@@ -38,7 +41,7 @@ if (tahun,sales,gapok){
 			std::cout << "Jumlah bonus anda ?? \n\n";
 			std::cout<<" Bonus "<<gapok*0.15;
 		}
-	}else if(tahun <1){
+	}else if( bulan <12){
 		if(sales>2000){
 			std::cout << "Jumlah bonus anda ?? \n\n";
 			std::cout<<" Bonus "<<gapok*0.25;
@@ -48,7 +51,6 @@ if (tahun,sales,gapok){
 		}
 	}
 }
-
     std::cout<<std::endl<<std::endl;
     main();
 }
